@@ -1,0 +1,1136 @@
+{
+  "throughput_noop_1_worker_threads": {
+    "value": 61278,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=noop_w1"
+  },
+  "throughput_noop_2_worker_threads": {
+    "value": 57896,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=noop_w2"
+  },
+  "throughput_noop_4_worker_threads": {
+    "value": 53747,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=noop_w4"
+  },
+  "throughput_noop_8_worker_threads": {
+    "value": 50876,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=noop_w8"
+  },
+  "scaling_speedup_noop_2_threads": {
+    "value": 0.94,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 2 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_noop_2_threads": {
+    "value": 47.2,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "scaling_speedup_noop_4_threads": {
+    "value": 0.88,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 4 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_noop_4_threads": {
+    "value": 21.9,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "scaling_speedup_noop_8_threads": {
+    "value": 0.83,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 8 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_noop_8_threads": {
+    "value": 10.4,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "throughput_sleep5ms_1_worker_threads": {
+    "value": 163,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=sleep5ms_w1"
+  },
+  "throughput_sleep5ms_2_worker_threads": {
+    "value": 327,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=sleep5ms_w2"
+  },
+  "throughput_sleep5ms_4_worker_threads": {
+    "value": 655,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=sleep5ms_w4"
+  },
+  "throughput_sleep5ms_8_worker_threads": {
+    "value": 1305,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=sleep5ms_w8"
+  },
+  "scaling_speedup_sleep5ms_2_threads": {
+    "value": 2.01,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 2 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_sleep5ms_2_threads": {
+    "value": 100.3,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "scaling_speedup_sleep5ms_4_threads": {
+    "value": 4.02,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 4 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_sleep5ms_4_threads": {
+    "value": 100.5,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "scaling_speedup_sleep5ms_8_threads": {
+    "value": 8.01,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 8 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_sleep5ms_8_threads": {
+    "value": 100.1,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "throughput_cpu_hash200k_1_worker_threads": {
+    "value": 5166,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=cpu_hash200k_w1"
+  },
+  "throughput_cpu_hash200k_2_worker_threads": {
+    "value": 9413,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=cpu_hash200k_w2"
+  },
+  "throughput_cpu_hash200k_4_worker_threads": {
+    "value": 17567,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=cpu_hash200k_w4"
+  },
+  "throughput_cpu_hash200k_8_worker_threads": {
+    "value": 22402,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median of 3 runs, suite=worker_scaling label=cpu_hash200k_w8"
+  },
+  "scaling_speedup_cpu_hash200k_2_threads": {
+    "value": 1.82,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 2 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_cpu_hash200k_2_threads": {
+    "value": 91.1,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "scaling_speedup_cpu_hash200k_4_threads": {
+    "value": 3.4,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 4 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_cpu_hash200k_4_threads": {
+    "value": 85,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "scaling_speedup_cpu_hash200k_8_threads": {
+    "value": 4.34,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput at 8 threads divided by throughput at 1 thread, same workload"
+  },
+  "scaling_efficiency_cpu_hash200k_8_threads": {
+    "value": 54.2,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "speedup divided by thread count"
+  },
+  "group_commit_off_throughput_1_threads": {
+    "value": 59440,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with --group-commit false"
+  },
+  "group_commit_on_throughput_1_threads": {
+    "value": 62772,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with --group-commit true"
+  },
+  "group_commit_speedup_1_threads": {
+    "value": 1.06,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "on divided by off, same binary and workload, only the flag changed"
+  },
+  "group_commit_off_throughput_4_threads": {
+    "value": 40860,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with --group-commit false"
+  },
+  "group_commit_on_throughput_4_threads": {
+    "value": 53286,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with --group-commit true"
+  },
+  "group_commit_speedup_4_threads": {
+    "value": 1.3,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "on divided by off, same binary and workload, only the flag changed"
+  },
+  "group_commit_off_throughput_8_threads": {
+    "value": 41172,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with --group-commit false"
+  },
+  "group_commit_on_throughput_8_threads": {
+    "value": 51781,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with --group-commit true"
+  },
+  "group_commit_speedup_8_threads": {
+    "value": 1.26,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "on divided by off, same binary and workload, only the flag changed"
+  },
+  "group_commit_rows_per_transaction_4_threads": {
+    "value": 6.73,
+    "unit": "rows",
+    "source": "results/summary.csv",
+    "method": "row writes divided by committed transactions, reported by the store"
+  },
+  "latency_noop_100ps_achieved": {
+    "value": 100,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_noop_100ps_p50_ms": {
+    "value": 3.12,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r100_rep*.csv",
+    "method": "nearest-rank p50 over 1800 raw e2e samples from intended submit time"
+  },
+  "latency_noop_100ps_p95_ms": {
+    "value": 4.19,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r100_rep*.csv",
+    "method": "nearest-rank p95 over 1800 raw e2e samples from intended submit time"
+  },
+  "latency_noop_100ps_p99_ms": {
+    "value": 4.24,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r100_rep*.csv",
+    "method": "nearest-rank p99 over 1800 raw e2e samples from intended submit time"
+  },
+  "latency_noop_500ps_achieved": {
+    "value": 500,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_noop_500ps_p50_ms": {
+    "value": 0.676,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r500_rep*.csv",
+    "method": "nearest-rank p50 over 7500 raw e2e samples from intended submit time"
+  },
+  "latency_noop_500ps_p95_ms": {
+    "value": 0.861,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r500_rep*.csv",
+    "method": "nearest-rank p95 over 7500 raw e2e samples from intended submit time"
+  },
+  "latency_noop_500ps_p99_ms": {
+    "value": 0.89,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r500_rep*.csv",
+    "method": "nearest-rank p99 over 7500 raw e2e samples from intended submit time"
+  },
+  "latency_noop_1000ps_achieved": {
+    "value": 1000,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_noop_1000ps_p50_ms": {
+    "value": 0.089,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r1000_rep*.csv",
+    "method": "nearest-rank p50 over 15000 raw e2e samples from intended submit time"
+  },
+  "latency_noop_1000ps_p95_ms": {
+    "value": 0.119,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r1000_rep*.csv",
+    "method": "nearest-rank p95 over 15000 raw e2e samples from intended submit time"
+  },
+  "latency_noop_1000ps_p99_ms": {
+    "value": 0.153,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r1000_rep*.csv",
+    "method": "nearest-rank p99 over 15000 raw e2e samples from intended submit time"
+  },
+  "latency_noop_2000ps_achieved": {
+    "value": 2000,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_noop_2000ps_p50_ms": {
+    "value": 0.019,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r2000_rep*.csv",
+    "method": "nearest-rank p50 over 30000 raw e2e samples from intended submit time"
+  },
+  "latency_noop_2000ps_p95_ms": {
+    "value": 0.029,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r2000_rep*.csv",
+    "method": "nearest-rank p95 over 30000 raw e2e samples from intended submit time"
+  },
+  "latency_noop_2000ps_p99_ms": {
+    "value": 0.056,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r2000_rep*.csv",
+    "method": "nearest-rank p99 over 30000 raw e2e samples from intended submit time"
+  },
+  "latency_noop_4000ps_achieved": {
+    "value": 4000,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_noop_4000ps_p50_ms": {
+    "value": 0.019,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r4000_rep*.csv",
+    "method": "nearest-rank p50 over 60000 raw e2e samples from intended submit time"
+  },
+  "latency_noop_4000ps_p95_ms": {
+    "value": 0.028,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r4000_rep*.csv",
+    "method": "nearest-rank p95 over 60000 raw e2e samples from intended submit time"
+  },
+  "latency_noop_4000ps_p99_ms": {
+    "value": 0.062,
+    "unit": "ms",
+    "source": "results/raw/latency_noop_r4000_rep*.csv",
+    "method": "nearest-rank p99 over 60000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_100ps_achieved": {
+    "value": 100,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_sleep5ms_100ps_p50_ms": {
+    "value": 13.18,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r100_rep*.csv",
+    "method": "nearest-rank p50 over 1800 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_100ps_p95_ms": {
+    "value": 16.66,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r100_rep*.csv",
+    "method": "nearest-rank p95 over 1800 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_100ps_p99_ms": {
+    "value": 16.73,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r100_rep*.csv",
+    "method": "nearest-rank p99 over 1800 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_500ps_achieved": {
+    "value": 499,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_sleep5ms_500ps_p50_ms": {
+    "value": 8.18,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r500_rep*.csv",
+    "method": "nearest-rank p50 over 7500 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_500ps_p95_ms": {
+    "value": 9.96,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r500_rep*.csv",
+    "method": "nearest-rank p95 over 7500 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_500ps_p99_ms": {
+    "value": 10.21,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r500_rep*.csv",
+    "method": "nearest-rank p99 over 7500 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_1000ps_achieved": {
+    "value": 580,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_sleep5ms_1000ps_p50_ms": {
+    "value": 1768.2,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r1000_rep*.csv",
+    "method": "nearest-rank p50 over 15000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_1000ps_p95_ms": {
+    "value": 3433.6,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r1000_rep*.csv",
+    "method": "nearest-rank p95 over 15000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_1000ps_p99_ms": {
+    "value": 3582.6,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r1000_rep*.csv",
+    "method": "nearest-rank p99 over 15000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_2000ps_achieved": {
+    "value": 570,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_sleep5ms_2000ps_p50_ms": {
+    "value": 6315.9,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r2000_rep*.csv",
+    "method": "nearest-rank p50 over 30000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_2000ps_p95_ms": {
+    "value": 11910.9,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r2000_rep*.csv",
+    "method": "nearest-rank p95 over 30000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_2000ps_p99_ms": {
+    "value": 12410.6,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r2000_rep*.csv",
+    "method": "nearest-rank p99 over 30000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_4000ps_achieved": {
+    "value": 572,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "completed jobs divided by wall time"
+  },
+  "latency_sleep5ms_4000ps_p50_ms": {
+    "value": 15061.3,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r4000_rep*.csv",
+    "method": "nearest-rank p50 over 60000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_4000ps_p95_ms": {
+    "value": 28470.2,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r4000_rep*.csv",
+    "method": "nearest-rank p95 over 60000 raw e2e samples from intended submit time"
+  },
+  "latency_sleep5ms_4000ps_p99_ms": {
+    "value": 29673.1,
+    "unit": "ms",
+    "source": "results/raw/latency_sleep5ms_r4000_rep*.csv",
+    "method": "nearest-rank p99 over 60000 raw e2e samples from intended submit time"
+  },
+  "http_submit_c1_throughput": {
+    "value": 27202,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_submit_c1_p50_ms": {
+    "value": 0.036,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c1_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_submit_c1_p95_ms": {
+    "value": 0.044,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c1_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_submit_c1_p99_ms": {
+    "value": 0.081,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c1_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_submit_c1_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_submit_c8_throughput": {
+    "value": 35597,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_submit_c8_p50_ms": {
+    "value": 0.212,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c8_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_submit_c8_p95_ms": {
+    "value": 0.355,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c8_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_submit_c8_p99_ms": {
+    "value": 0.457,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c8_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_submit_c8_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_submit_c32_throughput": {
+    "value": 54029,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_submit_c32_p50_ms": {
+    "value": 0.508,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c32_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_submit_c32_p95_ms": {
+    "value": 0.841,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c32_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_submit_c32_p99_ms": {
+    "value": 1.03,
+    "unit": "ms",
+    "source": "results/raw/http_submit_c32_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_submit_c32_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_status_c1_throughput": {
+    "value": 42246,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_status_c1_p50_ms": {
+    "value": 0.023,
+    "unit": "ms",
+    "source": "results/raw/http_status_c1_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_status_c1_p95_ms": {
+    "value": 0.027,
+    "unit": "ms",
+    "source": "results/raw/http_status_c1_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_status_c1_p99_ms": {
+    "value": 0.029,
+    "unit": "ms",
+    "source": "results/raw/http_status_c1_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_status_c1_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_status_c8_throughput": {
+    "value": 120906,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_status_c8_p50_ms": {
+    "value": 0.063,
+    "unit": "ms",
+    "source": "results/raw/http_status_c8_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_status_c8_p95_ms": {
+    "value": 0.106,
+    "unit": "ms",
+    "source": "results/raw/http_status_c8_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_status_c8_p99_ms": {
+    "value": 0.135,
+    "unit": "ms",
+    "source": "results/raw/http_status_c8_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_status_c8_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_status_c32_throughput": {
+    "value": 137400,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_status_c32_p50_ms": {
+    "value": 0.178,
+    "unit": "ms",
+    "source": "results/raw/http_status_c32_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_status_c32_p95_ms": {
+    "value": 0.45,
+    "unit": "ms",
+    "source": "results/raw/http_status_c32_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_status_c32_p99_ms": {
+    "value": 0.647,
+    "unit": "ms",
+    "source": "results/raw/http_status_c32_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_status_c32_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_mixed_c1_throughput": {
+    "value": 32762,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_mixed_c1_p50_ms": {
+    "value": 0.031,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c1_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c1_p95_ms": {
+    "value": 0.039,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c1_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c1_p99_ms": {
+    "value": 0.044,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c1_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c1_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_mixed_c8_throughput": {
+    "value": 49751,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_mixed_c8_p50_ms": {
+    "value": 0.142,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c8_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c8_p95_ms": {
+    "value": 0.335,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c8_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c8_p99_ms": {
+    "value": 0.415,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c8_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c8_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_mixed_c32_throughput": {
+    "value": 73315,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_mixed_c32_p50_ms": {
+    "value": 0.375,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c32_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c32_p95_ms": {
+    "value": 0.989,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c32_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c32_p99_ms": {
+    "value": 1.28,
+    "unit": "ms",
+    "source": "results/raw/http_mixed_c32_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_mixed_c32_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_health_c1_throughput": {
+    "value": 49724,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_health_c1_p50_ms": {
+    "value": 0.02,
+    "unit": "ms",
+    "source": "results/raw/http_health_c1_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_health_c1_p95_ms": {
+    "value": 0.023,
+    "unit": "ms",
+    "source": "results/raw/http_health_c1_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_health_c1_p99_ms": {
+    "value": 0.025,
+    "unit": "ms",
+    "source": "results/raw/http_health_c1_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_health_c1_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_health_c8_throughput": {
+    "value": 152140,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_health_c8_p50_ms": {
+    "value": 0.05,
+    "unit": "ms",
+    "source": "results/raw/http_health_c8_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_health_c8_p95_ms": {
+    "value": 0.075,
+    "unit": "ms",
+    "source": "results/raw/http_health_c8_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_health_c8_p99_ms": {
+    "value": 0.087,
+    "unit": "ms",
+    "source": "results/raw/http_health_c8_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_health_c8_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "http_health_c32_throughput": {
+    "value": 183415,
+    "unit": "req/s",
+    "source": "results/summary.csv",
+    "method": "median of the load generator's reported throughput"
+  },
+  "http_health_c32_p50_ms": {
+    "value": 0.166,
+    "unit": "ms",
+    "source": "results/raw/http_health_c32_r*.csv",
+    "method": "nearest-rank p50 over 24000 raw per-request latencies"
+  },
+  "http_health_c32_p95_ms": {
+    "value": 0.25,
+    "unit": "ms",
+    "source": "results/raw/http_health_c32_r*.csv",
+    "method": "nearest-rank p95 over 24000 raw per-request latencies"
+  },
+  "http_health_c32_p99_ms": {
+    "value": 0.358,
+    "unit": "ms",
+    "source": "results/raw/http_health_c32_r*.csv",
+    "method": "nearest-rank p99 over 24000 raw per-request latencies"
+  },
+  "http_health_c32_error_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "non-2xx responses divided by requests issued"
+  },
+  "distributed_throughput_1_processes": {
+    "value": 614,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median over runs with 1 worker processes of 2 threads each; the coordinator runs 0 embedded workers, so every job was executed by a separate process"
+  },
+  "distributed_ceiling_utilisation_1_processes": {
+    "value": 61.4,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "throughput divided by the theoretical ceiling of 1000 jobs/s (2 slots x one 2ms job each)"
+  },
+  "distributed_throughput_2_processes": {
+    "value": 1378,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median over runs with 2 worker processes of 2 threads each; the coordinator runs 0 embedded workers, so every job was executed by a separate process"
+  },
+  "distributed_ceiling_utilisation_2_processes": {
+    "value": 68.9,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "throughput divided by the theoretical ceiling of 2000 jobs/s (4 slots x one 2ms job each)"
+  },
+  "distributed_speedup_2_processes": {
+    "value": 2.24,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput divided by the single-process throughput"
+  },
+  "distributed_throughput_4_processes": {
+    "value": 2727,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median over runs with 4 worker processes of 2 threads each; the coordinator runs 0 embedded workers, so every job was executed by a separate process"
+  },
+  "distributed_ceiling_utilisation_4_processes": {
+    "value": 68.2,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "throughput divided by the theoretical ceiling of 4000 jobs/s (8 slots x one 2ms job each)"
+  },
+  "distributed_speedup_4_processes": {
+    "value": 4.44,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput divided by the single-process throughput"
+  },
+  "distributed_throughput_8_processes": {
+    "value": 5693,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median over runs with 8 worker processes of 2 threads each; the coordinator runs 0 embedded workers, so every job was executed by a separate process"
+  },
+  "distributed_ceiling_utilisation_8_processes": {
+    "value": 71.2,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "throughput divided by the theoretical ceiling of 8000 jobs/s (16 slots x one 2ms job each)"
+  },
+  "distributed_speedup_8_processes": {
+    "value": 9.27,
+    "unit": "x",
+    "source": "results/summary.csv",
+    "method": "throughput divided by the single-process throughput"
+  },
+  "priority_0_queue_wait_p50_ms": {
+    "value": 1950,
+    "unit": "ms",
+    "source": "results/raw/priority_0_50_9_50_r*.csv",
+    "method": "nearest-rank p50 over 6000 raw queue-wait samples at priority 0"
+  },
+  "priority_0_queue_wait_p95_ms": {
+    "value": 2528,
+    "unit": "ms",
+    "source": "results/raw/priority_0_50_9_50_r*.csv",
+    "method": "nearest-rank p95 over 6000 raw queue-wait samples at priority 0"
+  },
+  "priority_9_queue_wait_p50_ms": {
+    "value": 634,
+    "unit": "ms",
+    "source": "results/raw/priority_0_50_9_50_r*.csv",
+    "method": "nearest-rank p50 over 6000 raw queue-wait samples at priority 9"
+  },
+  "priority_9_queue_wait_p95_ms": {
+    "value": 1213,
+    "unit": "ms",
+    "source": "results/raw/priority_0_50_9_50_r*.csv",
+    "method": "nearest-rank p95 over 6000 raw queue-wait samples at priority 9"
+  },
+  "priority_queue_wait_reduction_p50": {
+    "value": 67.5,
+    "unit": "%",
+    "source": "results/raw/priority_0_50_9_50_r*.csv",
+    "method": "reduction in median queue wait for priority 9 relative to priority 0, same run"
+  },
+  "workflow_chain4_w1_p50_ms": {
+    "value": 9844.9,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_chain4_w1_throughput": {
+    "value": 35.47,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "workflow_chain4_w4_p50_ms": {
+    "value": 2466.8,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_chain4_w4_throughput": {
+    "value": 141.63,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "workflow_chain4_w8_p50_ms": {
+    "value": 1232.3,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_chain4_w8_throughput": {
+    "value": 283.29,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "workflow_fanout6_w1_p50_ms": {
+    "value": 9893.7,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_fanout6_w1_throughput": {
+    "value": 23.65,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "workflow_fanout6_w4_p50_ms": {
+    "value": 2471.6,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_fanout6_w4_throughput": {
+    "value": 94.81,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "workflow_fanout6_w8_p50_ms": {
+    "value": 1241,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_fanout6_w8_throughput": {
+    "value": 188.81,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "workflow_diamond6_w1_p50_ms": {
+    "value": 15481.7,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_diamond6_w1_throughput": {
+    "value": 23.66,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "workflow_diamond6_w4_p50_ms": {
+    "value": 3867.6,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_diamond6_w4_throughput": {
+    "value": 94.48,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "workflow_diamond6_w8_p50_ms": {
+    "value": 1915.1,
+    "unit": "ms",
+    "source": "results/summary.csv",
+    "method": "median of the driver's p50 over 3 runs"
+  },
+  "workflow_diamond6_w8_throughput": {
+    "value": 190.73,
+    "unit": "workflows/s",
+    "source": "results/summary.csv",
+    "method": "median workflows completed per second"
+  },
+  "failure_fail0pct_throughput": {
+    "value": 53406,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with retries enabled (max_attempts=3)"
+  },
+  "failure_fail0pct_dead_letter_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "jobs that exhausted their retries, divided by jobs completed"
+  },
+  "failure_fail30pct_throughput": {
+    "value": 10550,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with retries enabled (max_attempts=3)"
+  },
+  "failure_fail30pct_dead_letter_rate": {
+    "value": 2.5,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "jobs that exhausted their retries, divided by jobs completed"
+  },
+  "failure_fail70pct_throughput": {
+    "value": 10537,
+    "unit": "jobs/s",
+    "source": "results/summary.csv",
+    "method": "median throughput with retries enabled (max_attempts=3)"
+  },
+  "failure_fail70pct_dead_letter_rate": {
+    "value": 34.5,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "jobs that exhausted their retries, divided by jobs completed"
+  },
+  "backpressure_cap100_rejection_rate": {
+    "value": 97.3,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "rejected submissions divided by attempted, with max_outstanding=100 under a saturating submit rate"
+  },
+  "backpressure_cap1000_rejection_rate": {
+    "value": 86.2,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "rejected submissions divided by attempted, with max_outstanding=1000 under a saturating submit rate"
+  },
+  "backpressure_cap10000_rejection_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "rejected submissions divided by attempted, with max_outstanding=10000 under a saturating submit rate"
+  },
+  "backpressure_cap200000_rejection_rate": {
+    "value": 0,
+    "unit": "%",
+    "source": "results/summary.csv",
+    "method": "rejected submissions divided by attempted, with max_outstanding=200000 under a saturating submit rate"
+  },
+  "tests_total": {
+    "value": 132,
+    "unit": "tests",
+    "source": "build/jobengine_tests",
+    "method": "counted from `jobengine_tests --gtest_list_tests`"
+  },
+  "job_states": {
+    "value": 10,
+    "unit": "states",
+    "source": "include/jobengine/job.hpp",
+    "method": "counted from the JobState enumerators"
+  },
+  "http_routes": {
+    "value": 16,
+    "unit": "routes",
+    "source": "src/api/api.cpp",
+    "method": "counted from the kRoutes table, which is also what GET /routes returns"
+  },
+  "source_lines_cpp": {
+    "value": 6952,
+    "unit": "lines",
+    "source": "src/ include/ apps/",
+    "method": "newline count across the C++ sources and headers, excluding tests and third_party"
+  },
+  "test_lines_cpp": {
+    "value": 3180,
+    "unit": "lines",
+    "source": "tests/",
+    "method": "newline count across the test sources"
+  }
+}

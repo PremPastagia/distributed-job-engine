@@ -1,0 +1,314 @@
+
+########## worker_scaling ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  timestamp_utc=2026-09-11T13:16:55.210Z
+  os=Darwin 27.0.0 arm64
+  cpu=Apple M4
+  logical_cores=10
+  physical_cores=10
+  memory_bytes=17179869184
+
+=== worker_scaling ===
+  worker_scaling/noop_w1  56328.7/s  p95=0.51ms
+  worker_scaling/noop_w1  61416.2/s  p95=0.32ms
+  worker_scaling/noop_w1  61277.7/s  p95=0.287ms
+  worker_scaling/noop_w2  58227.6/s  p95=0.822ms
+  worker_scaling/noop_w2  56136.6/s  p95=0.927ms
+  worker_scaling/noop_w2  57895.5/s  p95=3.267ms
+  worker_scaling/noop_w4  52847.1/s  p95=37.58ms
+  worker_scaling/noop_w4  55387.5/s  p95=19.026ms
+  worker_scaling/noop_w4  53746.5/s  p95=33.523ms
+  worker_scaling/noop_w8  50875.6/s  p95=53.269ms
+  worker_scaling/noop_w8  50984.8/s  p95=48.714ms
+  worker_scaling/noop_w8  50230.8/s  p95=50.252ms
+  worker_scaling/sleep5ms_w1  162.2/s  p95=23403.313ms
+  worker_scaling/sleep5ms_w1  162.7/s  p95=23330.884ms
+  worker_scaling/sleep5ms_w1  162.7/s  p95=23340.441ms
+  worker_scaling/sleep5ms_w2  326.7/s  p95=11611.658ms
+  worker_scaling/sleep5ms_w2  326.3/s  p95=11621.152ms
+  worker_scaling/sleep5ms_w2  326.8/s  p95=11610.012ms
+  worker_scaling/sleep5ms_w4  654.5/s  p95=5780.93ms
+  worker_scaling/sleep5ms_w4  651.2/s  p95=5811.35ms
+  worker_scaling/sleep5ms_w4  654.6/s  p95=5778.329ms
+  worker_scaling/sleep5ms_w8  1303.3/s  p95=2893.793ms
+  worker_scaling/sleep5ms_w8  1307.6/s  p95=2883.297ms
+  worker_scaling/sleep5ms_w8  1305.3/s  p95=2888.455ms
+  worker_scaling/cpu_hash200k_w1  5165.8/s  p95=709.215ms
+  worker_scaling/cpu_hash200k_w1  5203.2/s  p95=705.923ms
+  worker_scaling/cpu_hash200k_w1  5100.1/s  p95=721.148ms
+  worker_scaling/cpu_hash200k_w2  9412.6/s  p95=373.778ms
+  worker_scaling/cpu_hash200k_w2  9340.6/s  p95=369.751ms
+  worker_scaling/cpu_hash200k_w2  9431.0/s  p95=370.444ms
+  worker_scaling/cpu_hash200k_w4  17566.5/s  p95=164.138ms
+  worker_scaling/cpu_hash200k_w4  17463.1/s  p95=166.074ms
+  worker_scaling/cpu_hash200k_w4  17607.0/s  p95=162.987ms
+  worker_scaling/cpu_hash200k_w8  22065.4/s  p95=91.995ms
+  worker_scaling/cpu_hash200k_w8  22401.7/s  p95=87.201ms
+  worker_scaling/cpu_hash200k_w8  22640.7/s  p95=86.619ms
+
+wrote 36 rows to results/summary.csv in 149.9s
+raw per-job and per-request samples are in results/raw/
+
+########## job_duration ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== job_duration ===
+  job_duration/0ms_noop  54883.5/s  p95=22.418ms
+  job_duration/0ms_noop  53571.2/s  p95=33.973ms
+  job_duration/0ms_noop  52946.5/s  p95=33.041ms
+  job_duration/1ms  3059.5/s  p95=2436.344ms
+  job_duration/1ms  3048.4/s  p95=2442.441ms
+  job_duration/1ms  3062.1/s  p95=2433.933ms
+  job_duration/5ms  652.8/s  p95=5800.142ms
+  job_duration/5ms  652.9/s  p95=5798.252ms
+  job_duration/5ms  654.7/s  p95=5781.836ms
+  job_duration/20ms  194.8/s  p95=9741.689ms
+  job_duration/20ms  195.1/s  p95=9728.291ms
+  job_duration/20ms  195.1/s  p95=9725.175ms
+  job_duration/cpu_50k  37229.0/s  p95=79.738ms
+  job_duration/cpu_50k  37864.1/s  p95=82.893ms
+  job_duration/cpu_50k  34610.2/s  p95=80.813ms
+  job_duration/cpu_1m  3838.5/s  p95=473.051ms
+  job_duration/cpu_1m  3839.2/s  p95=473.158ms
+  job_duration/cpu_1m  3842.0/s  p95=471.98ms
+
+wrote 18 rows to results/summary.csv in 61.6s
+raw per-job and per-request samples are in results/raw/
+
+########## priority ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== priority ===
+  priority/0:100  1534.6/s  p95=2455.538ms
+  priority/0:100  1529.7/s  p95=2460.855ms
+  priority/0:100  1536.7/s  p95=2449.132ms
+  priority/0:50,9:50  1522.9/s  p95=2474.011ms
+  priority/0:50,9:50  1533.8/s  p95=2453.981ms
+  priority/0:50,9:50  1525.8/s  p95=2466.631ms
+  priority/0:80,5:15,9:5  1525.4/s  p95=2470.072ms
+  priority/0:80,5:15,9:5  1525.9/s  p95=2469.128ms
+  priority/0:80,5:15,9:5  1530.7/s  p95=2461.296ms
+
+wrote 9 rows to results/summary.csv in 24.3s
+raw per-job and per-request samples are in results/raw/
+
+########## queue_capacity ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== queue_capacity ===
+  queue_capacity/100  40579.1/s  p95=3.158ms
+  queue_capacity/100  49926.0/s  p95=2.407ms
+  queue_capacity/100  49038.4/s  p95=2.453ms
+  queue_capacity/1000  50553.6/s  p95=19.216ms
+  queue_capacity/1000  51398.5/s  p95=18.126ms
+  queue_capacity/1000  51555.6/s  p95=19.089ms
+  queue_capacity/10000  51045.9/s  p95=133.911ms
+  queue_capacity/10000  50517.7/s  p95=143.626ms
+  queue_capacity/10000  50760.5/s  p95=148.028ms
+  queue_capacity/200000  51710.9/s  p95=135.134ms
+  queue_capacity/200000  51614.9/s  p95=135.071ms
+  queue_capacity/200000  51735.5/s  p95=142.848ms
+
+wrote 12 rows to results/summary.csv in 3.1s
+raw per-job and per-request samples are in results/raw/
+
+########## failure_heavy ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== failure_heavy ===
+  failure_heavy/fail0pct  54272.6/s  p95=3.066ms
+  failure_heavy/fail0pct  53212.7/s  p95=1.26ms
+  failure_heavy/fail0pct  53406.0/s  p95=6.047ms
+  failure_heavy/fail30pct  10607.9/s  p95=302.508ms
+  failure_heavy/fail30pct  10511.2/s  p95=301.971ms
+  failure_heavy/fail30pct  10549.9/s  p95=302.231ms
+  failure_heavy/fail70pct  10512.7/s  p95=303.421ms
+  failure_heavy/fail70pct  10537.1/s  p95=307.5ms
+  failure_heavy/fail70pct  10607.2/s  p95=305.575ms
+
+wrote 9 rows to results/summary.csv in 3.0s
+raw per-job and per-request samples are in results/raw/
+
+########## group_commit ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== group_commit ===
+  group_commit/false_w1  59440.3/s  p95=174.172ms
+  group_commit/false_w1  59934.6/s  p95=177.231ms
+  group_commit/false_w1  59303.2/s  p95=177.171ms
+  group_commit/false_w4  40519.9/s  p95=303.338ms
+  group_commit/false_w4  40907.1/s  p95=303.102ms
+  group_commit/false_w4  40859.5/s  p95=297.351ms
+  group_commit/false_w8  40914.2/s  p95=298.21ms
+  group_commit/false_w8  41649.0/s  p95=319.404ms
+  group_commit/false_w8  41171.6/s  p95=301.812ms
+  group_commit/true_w1  62771.7/s  p95=0.232ms
+  group_commit/true_w1  62531.3/s  p95=0.234ms
+  group_commit/true_w1  62969.1/s  p95=0.249ms
+  group_commit/true_w4  52664.4/s  p95=41.683ms
+  group_commit/true_w4  53309.7/s  p95=38.435ms
+  group_commit/true_w4  53286.0/s  p95=30.965ms
+  group_commit/true_w8  51487.3/s  p95=50.573ms
+  group_commit/true_w8  51780.9/s  p95=49.411ms
+  group_commit/true_w8  52212.6/s  p95=48.073ms
+
+wrote 18 rows to results/summary.csv in 8.1s
+raw per-job and per-request samples are in results/raw/
+
+########## latency ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== latency ===
+  latency/noop_100ps  100.1/s  p95=4.197ms
+  latency/noop_100ps  100.2/s  p95=4.183ms
+  latency/noop_100ps  100.1/s  p95=4.192ms
+  latency/noop_500ps  500.1/s  p95=0.86ms
+  latency/noop_500ps  500.1/s  p95=0.864ms
+  latency/noop_500ps  500.1/s  p95=0.858ms
+  latency/noop_1000ps  1000.2/s  p95=0.118ms
+  latency/noop_1000ps  1000.2/s  p95=0.12ms
+  latency/noop_1000ps  1000.2/s  p95=0.119ms
+  latency/noop_2000ps  2000.2/s  p95=0.027ms
+  latency/noop_2000ps  2000.2/s  p95=0.03ms
+  latency/noop_2000ps  2000.2/s  p95=0.028ms
+  latency/noop_4000ps  4000.2/s  p95=0.028ms
+  latency/noop_4000ps  4000.2/s  p95=0.029ms
+  latency/noop_4000ps  4000.2/s  p95=0.027ms
+  latency/sleep5ms_100ps  100.0/s  p95=16.687ms
+  latency/sleep5ms_100ps  100.1/s  p95=16.611ms
+  latency/sleep5ms_100ps  100.0/s  p95=16.663ms
+  latency/sleep5ms_500ps  499.3/s  p95=9.96ms
+  latency/sleep5ms_500ps  498.2/s  p95=9.986ms
+  latency/sleep5ms_500ps  499.6/s  p95=9.912ms
+  latency/sleep5ms_1000ps  582.5/s  p95=3401.528ms
+  latency/sleep5ms_1000ps  577.6/s  p95=3472.312ms
+  latency/sleep5ms_1000ps  580.4/s  p95=3427.982ms
+  latency/sleep5ms_2000ps  570.3/s  p95=11910.435ms
+  latency/sleep5ms_2000ps  569.1/s  p95=11947.358ms
+  latency/sleep5ms_2000ps  571.3/s  p95=11875.706ms
+  latency/sleep5ms_4000ps  571.9/s  p95=28463.227ms
+  latency/sleep5ms_4000ps  571.4/s  p95=28497.022ms
+  latency/sleep5ms_4000ps  572.5/s  p95=28447.578ms
+
+wrote 30 rows to results/summary.csv in 296.6s
+raw per-job and per-request samples are in results/raw/
+
+########## workflow ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== workflow ===
+  workflow/chain4_w1  35.5/s  p95=11108.215ms
+  workflow/chain4_w1  35.5/s  p95=11128.646ms
+  workflow/chain4_w1  35.1/s  p95=11244.996ms
+  workflow/chain4_w4  141.2/s  p95=2789.377ms
+  workflow/chain4_w4  142.6/s  p95=2763.869ms
+  workflow/chain4_w4  141.6/s  p95=2780.260ms
+  workflow/chain4_w8  283.3/s  p95=1386.450ms
+  workflow/chain4_w8  284.9/s  p95=1375.280ms
+  workflow/chain4_w8  283.0/s  p95=1387.057ms
+  workflow/fanout6_w1  23.6/s  p95=16199.305ms
+  workflow/fanout6_w1  23.6/s  p95=16194.330ms
+  workflow/fanout6_w1  23.7/s  p95=16135.620ms
+  workflow/fanout6_w4  94.8/s  p95=4028.607ms
+  workflow/fanout6_w4  95.3/s  p95=4011.075ms
+  workflow/fanout6_w4  94.7/s  p95=4036.265ms
+  workflow/fanout6_w8  190.3/s  p95=1999.010ms
+  workflow/fanout6_w8  188.8/s  p95=2018.603ms
+  workflow/fanout6_w8  188.6/s  p95=2023.834ms
+  workflow/diamond6_w1  23.6/s  p95=16766.728ms
+  workflow/diamond6_w1  23.7/s  p95=16753.002ms
+  workflow/diamond6_w1  23.8/s  p95=16689.574ms
+  workflow/diamond6_w4  94.5/s  p95=4183.858ms
+  workflow/diamond6_w4  94.9/s  p95=4163.657ms
+  workflow/diamond6_w4  93.8/s  p95=4215.457ms
+  workflow/diamond6_w8  190.7/s  p95=2065.611ms
+  workflow/diamond6_w8  189.9/s  p95=2075.869ms
+  workflow/diamond6_w8  191.2/s  p95=2059.949ms
+
+wrote 27 rows to results/summary.csv in 188.1s
+raw per-job and per-request samples are in results/raw/
+
+########## http_api ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== http_api ===
+  http_api/submit_c1  25130.4/s  p95=0.056ms
+  http_api/submit_c1  27535.6/s  p95=0.040ms
+  http_api/submit_c1  27201.5/s  p95=0.041ms
+  http_api/submit_c8  35596.8/s  p95=0.355ms
+  http_api/submit_c8  32133.9/s  p95=0.360ms
+  http_api/submit_c8  36178.0/s  p95=0.352ms
+  http_api/submit_c32  54029.2/s  p95=0.860ms
+  http_api/submit_c32  57390.9/s  p95=0.762ms
+  http_api/submit_c32  52137.0/s  p95=0.875ms
+  http_api/status_c1  41639.1/s  p95=0.027ms
+  http_api/status_c1  42246.0/s  p95=0.027ms
+  http_api/status_c1  42740.1/s  p95=0.027ms
+  http_api/status_c8  122816.2/s  p95=0.105ms
+  http_api/status_c8  119990.4/s  p95=0.105ms
+  http_api/status_c8  120906.2/s  p95=0.107ms
+  http_api/status_c32  132323.3/s  p95=0.474ms
+  http_api/status_c32  142544.1/s  p95=0.419ms
+  http_api/status_c32  137400.4/s  p95=0.448ms
+  http_api/mixed_c1  32463.7/s  p95=0.039ms
+  http_api/mixed_c1  32778.8/s  p95=0.039ms
+  http_api/mixed_c1  32761.5/s  p95=0.038ms
+  http_api/mixed_c8  53569.0/s  p95=0.315ms
+  http_api/mixed_c8  48724.6/s  p95=0.347ms
+  http_api/mixed_c8  49750.6/s  p95=0.341ms
+  http_api/mixed_c32  73315.1/s  p95=0.900ms
+  http_api/mixed_c32  67258.0/s  p95=1.075ms
+  http_api/mixed_c32  73979.5/s  p95=0.928ms
+  http_api/health_c1  48865.4/s  p95=0.023ms
+  http_api/health_c1  50699.3/s  p95=0.023ms
+  http_api/health_c1  49723.7/s  p95=0.022ms
+  http_api/health_c8  152140.4/s  p95=0.076ms
+  http_api/health_c8  151897.8/s  p95=0.075ms
+  http_api/health_c8  155554.3/s  p95=0.074ms
+  http_api/health_c32  172365.5/s  p95=0.285ms
+  http_api/health_c32  183473.6/s  p95=0.232ms
+  http_api/health_c32  183414.7/s  p95=0.242ms
+
+wrote 36 rows to results/summary.csv in 7.9s
+raw per-job and per-request samples are in results/raw/
+
+########## distributed ##########
+
+benchmark environment (3 repetition(s) per configuration):
+  (environment already recorded by an earlier suite in this run)
+
+=== distributed ===
+  distributed/1proc  603.6/s
+  distributed/1proc  614.0/s
+  distributed/1proc  714.3/s
+  distributed/2proc  1381.9/s
+  distributed/2proc  1378.0/s
+  distributed/2proc  1358.7/s
+  distributed/4proc  2659.6/s
+  distributed/4proc  2747.3/s
+  distributed/4proc  2727.3/s
+  distributed/8proc  5747.1/s
+  distributed/8proc  5137.0/s
+  distributed/8proc  5692.6/s
+
+wrote 12 rows to results/summary.csv in 37.6s
+raw per-job and per-request samples are in results/raw/
+
+all suites completed; 207 rows in results/summary.csv

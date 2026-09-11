@@ -1,0 +1,30 @@
+# ---- build output -------------------------------------------------------------------
+build/
+build-*/
+compile_commands.json
+
+# ---- fetched dependency -------------------------------------------------------------
+# GoogleTest is pinned to v1.15.2 and fetched by CMake on the first configure. A local
+# checkout here makes the test build work offline; it is not part of this project and is
+# not committed. See docs/DESIGN_DECISIONS.md D-10.
+third_party/
+
+# ---- runtime state ------------------------------------------------------------------
+*.db
+*.db-wal
+*.db-shm
+
+# ---- regenerable benchmark output ---------------------------------------------------
+# Raw per-sample CSVs: one row per job or per request, ~1 MB per run and well over 100 MB
+# for a full suite. Regenerate with `node scripts/run_benchmarks.mjs`.
+# Everything DERIVED from them is committed - summary.csv (one row per run, with every
+# parameter that produced it), env.txt, verified_metrics.json, metrics_table.md, tables.md
+# and plots/ - so the published numbers and their provenance travel with the repository.
+results/raw/
+
+# Scratch files and directories written by individual acceptance gates while they run.
+results/gate_*/
+results/gate_*.csv
+results/static_control/
+
+.DS_Store

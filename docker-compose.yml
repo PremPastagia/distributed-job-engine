@@ -1,0 +1,26 @@
+# UNVERIFIED: never run. Docker is not installed on the development machine.
+# See the header of Dockerfile and docs/DESIGN_DECISIONS.md D-12.
+#
+# Shape: one coordinator with no embedded workers, plus two worker processes, which is the
+# topology that scripts/gates/g14_distributed.mjs exercises without containers.
+services:
+  coordinator:
+    build: .
+    command: ["--host", "0.0.0.0", "--port", "8080",
+              "--db", "/var/lib/jobengine/jobengine.db", "--workers", "0"]
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - jobengine-data:/var/lib/jobengine
+
+  worker:
+    build: .
+    entrypoint: ["jobengine-worker"]
+    command: ["--host", "coordinator", "--port", "8080", "--threads", "4"]
+    depends_on:
+      - coordinator
+    deploy:
+      replicas: 2
+
+volumes:
+  jobengine-data:
